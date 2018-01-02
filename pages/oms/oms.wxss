@@ -1,0 +1,107 @@
+.header-tap {
+    display: flex;
+    height: 80rpx;
+    border-bottom: 2rpx solid #e0e0e0;
+    background-color: #fff;
+}
+
+.header-tap view {
+    flex: 1;
+    text-align: center;
+    line-height: 74rpx;
+}
+
+.header-selected {
+    color: #fab655;
+    border-bottom: 6rpx solid #fab655;
+}
+
+.header-tap view text {
+    display: inline-block;
+}
+
+page {
+    background-color: #f2f2f2;
+    font-size: 24rpx;
+}
+
+.order {
+    margin-top: 15rpx;
+}
+
+.order-header, .order-time, .order-remark, .order-bottom {
+
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #fff;
+    padding: 0 20rpx;
+}
+
+.order-header .classify {
+    margin-right: 40rpx;
+}
+
+.order-header .state {
+    float: right;
+    color: #fab655;
+}
+
+.order-content {
+    padding: 30rpx;
+    line-height: 50rpx;
+}
+
+.order-content .name {
+    display: inline-block;
+    width: 450rpx;
+}
+
+.order-content .num {
+    display: inline-block;
+    width: 100rpx;
+    margin-right: 70rpx;
+}
+
+.order-remark {
+    border-bottom: 1rpx solid #e0e0e0;
+    border-top: 1rpx solid #e0e0e0;
+}
+
+.order-bottom {
+    position: relative;
+}
+
+.order-bottom view {
+    position: relative;
+    top: 50%;
+    margin-top: -26rpx;
+    float: right;
+    width: 136rpx;
+    height: 52rpx;
+    border-radius: 6rpx;
+    text-align: center;
+    line-height: 52rpx;
+}
+
+.order-bottom .pay {
+    color: #fff;
+    background-color: #fab655;
+    margin-left: 30rpx;
+}
+
+.order-bottom .cancel {
+    border: 2rpx solid #e0e0e0;
+}
+
+.order .order-time .prices {
+    margin-left: 210rpx;
+}
+
+.order-remark-selected {
+    height: 200rpx;
+    background-color: #fff;
+    border-bottom: 1rpx solid #e0e0e0;
+    border-top: 1rpx solid #e0e0e0;
+    padding:25rpx 0 0 40rpx;
+    line-height:40rpx;
+}

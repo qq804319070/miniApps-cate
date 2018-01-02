@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/appointment/appointment",
+    "pages/person/person",
+    "pages/eval/eval",
+    "pages/reserve/reserve",
+    "pages/sureOrder/sureOrder",
+    "pages/pj/pj",
+    "pages/oms/oms"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f9b552",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "平江生态美食",
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#f9b552",
+    "color": "#ffe0b2",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/home.png",
+        "selectedIconPath": "/img/home-s.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "/img/person.png",
+        "selectedIconPath": "/img/person-s.png"
+      }
+    ]
+  }
+}

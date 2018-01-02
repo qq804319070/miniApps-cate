@@ -1,0 +1,14 @@
+<view class="grade-wrap">
+  <view class="grade" bindtap="grade">
+    <image src="{{item?'/img/grade-selected.png':'/img/grade.png'}}" data-info="{{index}}" wx:for="{{grade}}"></image>
+  </view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="grade-txt">
+  <textarea placeholder="说说我们的优点和美中不足的地方吧" placeholder-class="eval-in" name="content"/>
+</view>
+
+<view class="bottom">
+  <button type="primary"  formType="submit" class="tj">提交</button>
+</view>
+</form>

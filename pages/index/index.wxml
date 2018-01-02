@@ -1,0 +1,54 @@
+<swiper autoplay interval="4000" circular="true" indicator-dots indicator-active-color="#f9b552">
+ <block wx:for="{{imgUrls}}">
+    <swiper-item>
+        <image src="{{item.images}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="boundary"></view>
+<view class="nav" bindtap="order">
+    <view data-info="1">
+        <image src="/img/nav1.png" data-info="1"></image>
+    </view>
+    <view data-info="2">
+        <image src="/img/nav2.png" data-info="2"></image>
+    </view>
+    <view data-info="3">
+        <image src="/img/nav3.png" data-info="3"></image>
+    </view>
+    <view data-info="4">
+        <image src="/img/nav4.png" data-info="4"></image>
+        <contact-button type="default-light" size="27" session-from="weapp" class="service">
+        </contact-button>
+    </view>
+</view>
+<view class="boundary"></view>
+<view class="storeInfo">
+    <view class="bot">
+        <image src="/img/store.png"></image>
+        <text>{{shop.shop_name}}</text>
+    </view>
+    <view class="bot" bindtap="get_location_bind">
+        <image src="/img/site.png"></image>
+        <text>{{shop.shop_address}}</text>
+    </view>
+    <view class="bot" bindtap="phone">
+        <image src="/img/phone.png"></image>
+        <text>电话 : {{shop.shop_tel}}</text>
+    </view>
+    <view>
+        <image src="/img/time.png"></image>
+        <text>营业时间 : {{shop.time}}</text>
+    </view>
+</view>
+
+<view class="environment-h">
+    <image src="/img/env.png"></image>
+    <text>商家环境</text>
+</view>
+
+<view class="environment">
+ <block wx:for="{{shop.album}}">
+    <image src="{{item}}" bindtap="fanda" id="{{item}}"></image>
+  </block>
+</view>

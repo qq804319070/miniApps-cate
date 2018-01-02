@@ -1,0 +1,64 @@
+page {
+    font-family: "微软雅黑";
+    color: #000;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 26rpx;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+view ,text {
+    box-sizing: border-box;
+}
+
+
+.input-placeholder {
+    font-family: "微软雅黑";
+    font-size: 26rpx;
+    color: #a0a0a0;
+}
+
+input {
+    font-family: "微软雅黑";
+    font-size: 26rpx;
+    color: #000;
+}
+
+.theme-color {
+    color: #000;
+}
+
+.clear::after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: "";
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+view text {
+    box-sizing: border-box;
+}
+
+swiper {
+    width: 100%;
+    height: 380rpx;
+}
+
+image {
+    border: none;
+    vertical-align: middle;
+}
+
+
+swiper image {
+    width: 100%;
+    height: 100%;
+}
+
+

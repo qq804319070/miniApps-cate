@@ -1,0 +1,204 @@
+page {
+    background-color: #f5f5f5;
+    font-size: 28rpx;
+    color: #262626;
+}
+.site {
+    width: 100%;
+    height: 82rpx;
+    background-color: #fff;
+    line-height: 82rpx;
+    font-size: 26rpx;
+    padding: 0 33rpx;
+    margin-bottom: 21rpx;
+}
+
+.push {
+    color: #df100c;
+    margin-right: 10rpx;
+}
+
+.dining {
+    width: 100%;
+    height: 100rpx;
+    padding: 0 30rpx;
+    line-height: 100rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.dining image {
+    width: 34rpx;
+    height: 34rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+
+.order {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-top: 1rpx solid #f2f2f2;
+    padding: 0 30rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    color: #aeaeae;
+}
+
+.order .price {
+    float: right;
+    width: 200rpx;
+    text-align: right;
+}
+
+.order .name {
+    float: left;
+    text-align: left;
+    color: #000;
+    width: 250rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.orders {
+    margin-bottom: 20rpx;
+}
+
+.remark-wrap {
+    position: relative;
+    width: 100%;
+    height: 200rpx;
+    padding: 30rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+
+
+.remark {
+    padding-left: 65rpx;
+    height: 150rpx;
+}
+
+.remark-txt {
+    position: absolute;
+    top: 26rpx;
+}
+
+.prices {
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 30rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.prices .price {
+    float: right;
+}
+.dibu{
+    clear: both;
+    height: 90rpx;
+}
+.bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    line-height:90rpx;
+    padding-left: 40rpx;
+    box-sizing: border-box;
+
+}
+
+.total {
+    color: #e32b28;
+    font-size: 32rpx;
+
+}
+
+.bottom .pay {
+    float: right;
+    width: 240rpx;
+    height: 90rpx;
+    background-color: #fab655;
+    text-align: center;
+    color: #fff;
+}
+.bottom .pays {
+    float: right;
+    width: 240rpx;
+    height: 90rpx;
+    background-color: #fab655;
+    text-align: center;
+    margin-left: 10rpx;
+    color: #fff;
+}
+.box1{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+.one{
+    width:90%;
+    height:100rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px #eee solid;
+}
+.box1 .box2{
+    width:90%;
+    height:100%;
+    border-bottom:1px #eee solid;
+    font-size:28rpx;
+}
+.two-1{
+    width:100%;
+    height:100%;
+    display: block;
+    padding-top:25rpx;
+}
+.two-1 text{
+    float:right;
+}
+.two-2{
+    width:100%;
+    height:100rpx;
+    display:flex;
+    align-items: center;
+}
+.box1 .box3{
+    width:90%;
+    height:100%;
+    border-bottom:1px #eee solid;
+    font-size:26rpx;
+
+}
+.bg{
+    height: 20rpx;
+    width: 100%;
+}
+.xz{
+    width: 100%;
+    height: 100rpx;
+    background: #fff;
+}
+.xz .hao{
+    width: 280rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    float: left;
+    padding-left: 33rpx;
+}
+.xz input{
+    width: 350rpx;
+    float: left;
+    height: 100rpx;
+    font-size: 28rpx;
+}

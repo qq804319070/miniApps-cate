@@ -1,0 +1,32 @@
+<view class="diancan">
+    <view bindtap="diancai">{{header_info===1?"点餐":"外卖"}}</view>
+    <view style="color: #fab655; border-bottom:2rpx solid #fab655;">评价</view>
+</view>
+<view class="pin">
+    <view class="pin1">
+        <view class="fen">
+            <view class="wu">{{grade}}</view>
+            <view class="fen1">分</view>
+        </view>
+
+        <view class="gong">共{{num}}条评论</view>
+    </view>
+</view>
+
+<block wx:for="{{pjshow}}">
+    <view class="plnr">
+        <view class="plnr1">
+            <view class="nicw">
+                <view class="nic">{{item.nickname}}</view>
+                <view class="wujx">
+
+                    <block wx:for="{{item.arr}}" wx:for-item="itemName">
+                        <image src="/img/wjx.png"></image>
+                    </block>
+                </view>
+            </view>
+            <view class="riqi">{{item.time}}</view>
+        </view>
+        <view class="plnrwz">{{item.content}}</view>
+    </view>
+</block>

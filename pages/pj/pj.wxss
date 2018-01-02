@@ -1,0 +1,56 @@
+.grade-wrap {
+  width: 100%;
+  height: 310rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grade {
+  display: flex;
+  width: 365rpx;
+  height: 58rpx;
+  justify-content: space-between;
+}
+
+.grade image {
+  width: 58rpx;
+  height: 58rpx;
+}
+
+.grade-txt {
+  width: 100%;
+  height: 180rpx;
+  padding: 0 45rpx; 
+  box-sizing: border-box;
+}
+
+.grade-txt textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  border: 2rpx solid #9b9b9b;
+}
+
+.eval-in {
+  color: #9b9b9b;
+  font-size: 28rpx;
+}
+
+.bottom {
+  margin-top: 170rpx;
+}
+.bottom button {
+  border-radius: 0;
+}
+.tj{
+  background-color:#fab655;
+}
+button[type="primary"] {
+color:#FFFFFF;
+background-color:#fab655;
+
+}

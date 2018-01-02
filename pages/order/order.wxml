@@ -1,0 +1,71 @@
+<view class="diancan">
+    <view class="header-selected">{{dian_cai===1?"点餐":"外卖"}}</view>
+    <view hover-class="none" class="eval" bindtap="bindToEval">评价</view>
+</view>
+
+<view class="diancanda">
+    <view class="diancan1" bindtap="changeLeft">
+        <block wx:for="{{classfity}}">
+            <view class="{{select_left===index+1?'selected-left':''}}" data-left="{{index+1}}">{{item.name}}</view>
+        </block>
+    </view>
+    <scroll-view scroll-y class="detail-scroll" scroll-into-view="{{location}}" bindscroll="changeLocation">
+        <view class="diancan2">
+            <view class="diancan4" wx:for="{{diancai_detail}}" wx:for-item="col" wx:for-index="sup_index">
+                <view class="diancan5" id="{{col.location}}">{{col.title}}</view>
+                <view class="diancan3" wx:for="{{col.list}}" bindtap="join_cart" wx:for-index="sub_index">
+                    <view class="sptu">
+                        <image src="{{item.img}}"></image>
+                    </view>
+                    <view class="wenz">
+                        <view class="spbt">{{item.title}}</view>
+                        <view class="ys">已售{{item.sell}}件</view>
+                        <view class="jia">¥ {{item.price}}</view>
+                    </view>
+                    <view class="jiajian">
+                        <view class="jian" data-count="min" data-sup="{{sup_index}}" wx:if="{{item.num!==0}}"
+                              data-sub="{{sub_index}}" data-price="{{item}}" data-key="{{item.id}}">
+                            <image src="/img/jian.png" data-count="min" data-sup="{{sup_index}}"
+                                   data-sub="{{sub_index}}" data-key="{{item.id}}"></image>
+                        </view>
+                        <view class="shul">{{item.num===0?"":item.num}}</view>
+                        <view class="jian" data-count="add" data-sup="{{sup_index}}" data-sub="{{sub_index}}"
+                              data-key="{{item.id}}" data-unit="{{item.price}}" data-name="{{item.goods_name}}">
+                            <image src="/img/jia.png" data-count="add" data-sup="{{sup_index}}" data-sub="{{sub_index}}"
+                                   data-key="{{item.id}}" data-unit="{{item.price}}" data-name="{{item.goods_name}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view class="bottom">
+    <view class="buy-car" style="{{buy_car.price?'background:#fab655':''}}" bindtap="show_cart">
+        <image src="/img/gouwuche.png"></image>
+    </view>
+    <view class="num">{{buy_car.num}}</view>
+    <text class="{{buy_car.price?'price':'price-sele'}}">{{buy_car.price>0?"￥"+buy_car.price:"购物车空空如也"}}</text>
+    <view class="sure" bindtap="bindToOrder">选好了</view>
+</view>
+
+<view class="layer" wx:if="{{show_cart}}" catchtouchmove="stop" bindtap="cancle">
+    <view class="layer-into" data-stop="1">
+        <view class="head" data-stop="1">
+            <image src="/img/clear.png" data-stop="1"></image>
+            <text data-stop="1" data-clear="1" bindtap="empty">清空购物车</text>
+        </view>
+        <view class="col" data-stop="1" wx:for="{{sendData}}">
+            <text class="name" data-stop="1">{{item.name}}</text>
+            <text data-stop="1">￥{{item.price}}</text>
+            <view class="option" data-stop="1">
+                <view class="miu" data-stop="1" data-option="miu" data-id="{{item.id}}">-</view>
+                <text class="number" data-stop="1">{{item.num}}</text>
+                <view class="add" data-stop="1" data-option="add" data-id="{{item.id}}">+</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+

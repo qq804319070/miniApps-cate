@@ -1,0 +1,51 @@
+<!--头部-->
+<view class="header-tap" bindtap="header_selected">
+    <view data-info="1">
+        <text data-info="1" class="{{header_selected==1?'header-selected':''}}">全部</text>
+    </view>
+    <view data-info="2">
+        <text data-info="2" class="{{header_selected==2?'header-selected':''}}">待支付</text>
+    </view>
+    <view data-info="3">
+        <text data-info="3" class="{{header_selected==3?'header-selected':''}}">进行中</text>
+    </view>
+    <view data-info="4">
+        <text data-info="4" class="{{header_selected==4?'header-selected':''}}">已完成</text>
+    </view>
+</view>
+
+<!--订单内容-->
+
+<block wx:for="{{orders}}" wx:for-item="order">
+    <view class="order">
+        <view class="order-header">
+            <text class="classify">{{order.classify}}</text>
+
+            <text class="state">{{order.state}}</text>
+        </view>
+        <view class="order-content">
+            <view wx:for="{{order.goods}}" wx:for-item="good">
+                <text class="name">{{good.goods_name}}</text>
+                <text class="num">x{{good.goods_number}}</text>
+                <text class="price">￥{{good.goods_price}}</text>
+            </view>
+        </view>
+        <view class="order-time">
+            <text class="time">下单时间: {{order.order_time}}</text>
+            <text class="prices">实付:￥{{order.goods_amount}}</text>
+        </view>
+        <view class="order-remark" wx:if="{{order.classify=='点餐'}}">
+            买家备注: {{order.remark}}
+        </view>
+        <view class="order-remark-selected" wx:else>
+            <view><text>配送地址:{{order.address}}</text></view>
+            <view><text>联系人:{{order.user}}</text></view>
+            <view><text>电话:{{order.tel}}</text></view>
+            <view><text>买家备注:{{order.remark}}</text></view>
+        </view>
+        <view class="order-bottom" bindtap="skip" id="{{order.order_id}}">
+            <view class="pay" data-info="{{order.id}}" >{{order.id==2?'去支付':order.id==3?'联系商家':'评价'}}</view>
+            <view class="cancel" wx:if="{{order.id == 2}}" data-info="{{order.id}}" data-call="1">取消订单</view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,7 @@
+<view class="appoint" wx:for="{{list}}">
+    <view>下单时间 : {{item.riqi}}</view>
+    <view>人数 : {{item.number}}人</view>
+    <view>预约订金 : ￥{{item.money}}</view>
+     <view class="complete">{{item.status}}</view>
+   
+</view>

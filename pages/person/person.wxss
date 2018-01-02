@@ -1,0 +1,66 @@
+page {
+  background-color: #eeeeee;
+}
+.avatar-w {
+  display: flex;
+  width: 100%;
+  height: 390rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-w .avatar {
+  width: 181rpx;
+  height: 181rpx;
+  border-radius: 50%;
+}
+.avatar-w image {
+  margin-bottom: 30rpx;
+  box-shadow: 0px 0px 80rpx 10rpx #e0e0e0;
+}
+.avatar-w text {
+  font-size: 26rpx;
+}
+.panel {
+  width: 669rpx;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+.panel .panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 110rpx;
+  font-weight: bolder;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ececec;
+  padding: 0 32rpx;
+}
+.panel .panel-head .arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-left: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  transform: rotate(-45deg);
+}
+.panel .col {
+  padding-left: 50rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.panel .col .arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-left: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  transform: rotate(-135deg);
+  margin-right: 20rpx;
+}
+.panel .bor {
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}

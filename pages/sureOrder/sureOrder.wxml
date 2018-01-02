@@ -1,0 +1,63 @@
+<block wx:if="{{cart_type != 2}}">
+    <view class="site" bindtap="select_address_bind">
+        <text class="push">+</text><text>选择收货地址</text>
+    </view>
+</block>
+<block wx:if="{{wx_address_info}}">
+    <view class="box1">
+        <view class="box2">
+            <view class="two-1">
+                收货人：{{wx_address_info.userName}}
+                <text>电话：{{wx_address_info.telNumber}}</text>
+            </view>
+            <view class="two-2">
+                <text>收货地址：{{wx_address_info.provinceName}}{{wx_address_info.cityName}}{{wx_address_info.countyName}}{{wx_address_info.detailInfo}}</text>
+            </view>
+        </view>
+    </view>
+</block>
+<view class="dining">
+    <image src="/img/store.png"></image>{{shop_name}}
+    <text></text>
+</view>
+<view class="orders">
+    <view class="order" wx:for="{{order}}">
+        <text class="name">{{item.goods_name}}</text><text class="num">x {{item.goods_number}}</text><text class="price">￥{{item.goods_price}}</text>
+    </view>
+</view>
+
+<view class="remark-wrap">
+    <text class="remark-txt">备注: </text><textarea class="remark" placeholder="给商家留言" bindinput="bindKeyInput"></textarea>
+</view>
+<block wx:if="{{cart_type == 2}}">
+    <view class="xz">
+        <text class="hao">餐桌号/房间名称：</text> <input  placeholder="请输入您的餐桌号/房间名称"  bindinput="bindKeyInputss"/>
+    </view>
+    <view class="bg"></view>
+</block>
+<block wx:if="{{cart_type != 2}}">
+    <view class="prices">
+        <text class="price">配送费: {{freight}}</text>
+    </view>
+    <view class="bg"></view>
+</block>
+
+<view class="prices">
+    <text class="price">总计: ￥{{total}}</text>
+</view>
+<block wx:if="{{off ==2}}">
+<view class="prices">
+    <text class="price">折扣: {{agio}}折</text>
+</view>
+<view class="prices">
+    <text class="price">折扣价: ￥{{price}}</text>
+</view>
+</block>
+<view class="dibu"></view>
+<view class="bottom">
+    <text class="total">￥ {{price}}</text>
+    <block wx:if="{{cart_type==2}}">
+     <view class="pays" bindtap="yuyue">餐后支付</view>
+     </block>
+    <view class="pay" bindtap="pays">立即支付</view>
+</view>

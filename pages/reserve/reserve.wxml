@@ -1,0 +1,54 @@
+<form bindsubmit="formSubmit" >
+    <view class="yuding">
+        <view class="yi">
+            <view class="er">预定日期</view>
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="san">
+                    {{date}}
+                </view>
+            </picker>
+        </view>
+        <view class="yi">
+            <view class="er">用餐时间</view>
+            <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="san">
+                    {{time}}
+                </view>
+            </picker>
+        </view>
+        <view class="yi">
+            <view class="er">用餐人数</view>
+            <view class="san">
+                <input  type="number" value="1" name="number" />
+            </view>
+        </view>
+        <view class="yi">
+            <view class="er">预定人</view>
+            <view class="san">
+                <input placeholder="请输入您的姓名" name="name"/>
+            </view>
+        </view>
+        <view class="yi">
+            <view class="er">手机号</view>
+            <view class="san">
+                <input type="number" placeholder="请输入您的手机" name="tel"/>
+            </view>
+        </view>
+        <view class="yi">
+            <view class="er">需支付定金</view>
+            <view class="san">
+                   {{dj}}元
+            </view>
+        </view>
+    </view>
+    <view class="heng"></view>
+    <view class="beiz">
+        <view class="neirong">
+            <textarea placeholder="请输入您想要对商家说明的内容" name="liuyan"/>
+        </view>
+    </view>
+    <view class="heng"></view>
+    <view class="">
+       <button formType="submit">确定</button>
+    </view>
+</form>

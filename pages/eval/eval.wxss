@@ -1,0 +1,82 @@
+.diancan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100rpx;
+    width: 100%;
+    border-bottom:1rpx solid #ececec;
+}
+.diancan view{
+    width: 50%;
+    height: 100rpx;
+    font-size: 35rpx;
+    margin: 0rpx 40rpx;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.pin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175rpx;
+    width: 100%;
+    border-bottom:1rpx solid #ececec;
+}
+.fen{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-end;
+
+}
+.gong{
+    margin-top: 5rpx;
+    width: 100%;
+    text-align:center;
+    font-size: 30rpx;
+    color: #a0a0a0;
+}
+.fen1{
+
+    font-size: 30rpx;
+    color: #ff6a6b;
+}
+.wu{
+    color: #ff6a6b;
+    font-size: 70rpx;
+}
+.plnr{
+    border-bottom:1rpx solid #ececec;
+    padding: 40rpx 30rpx;
+}
+.wujx{
+    display: flex;
+    height: 26rpx;
+    align-items:  flex-end;
+}
+.wujx image{
+    margin-left: 5rpx;
+    height: 26rpx;
+    width: 26rpx;
+}
+.plnr1{
+    display: flex;
+    justify-content: space-between;
+}
+.nicw{
+    display: flex;
+    align-items: center;
+
+}
+.nic{
+    font-size: 35rpx;
+}
+.riqi{
+    font-size: 28rpx;
+    color: #a0a0a0;
+}
+.plnrwz{
+    margin-top: 20rpx;
+    font-size: 30rpx;
+
+}
